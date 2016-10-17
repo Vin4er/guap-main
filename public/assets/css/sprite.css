@@ -1,0 +1,198 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-Logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 240px;
+  height: 104px;
+}
+.icon-ic_adress {
+  background-image: url(../img/sprite.png);
+  background-position: -240px -273px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_announce {
+  background-image: url(../img/sprite.png);
+  background-position: -358px -128px;
+  width: 42px;
+  height: 42px;
+}
+.icon-ic_announce_hover {
+  background-image: url(../img/sprite.png);
+  background-position: -358px -170px;
+  width: 42px;
+  height: 42px;
+}
+.icon-ic_chinese_language {
+  background-image: url(../img/sprite.png);
+  background-position: -358px -88px;
+  width: 48px;
+  height: 40px;
+}
+.icon-ic_close {
+  background-image: url(../img/sprite.png);
+  background-position: -240px 0px;
+  width: 70px;
+  height: 64px;
+}
+.icon-ic_en_language {
+  background-image: url(../img/sprite.png);
+  background-position: -358px -48px;
+  width: 48px;
+  height: 40px;
+}
+.icon-ic_fax {
+  background-image: url(../img/sprite.png);
+  background-position: -64px -208px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_fb {
+  background-image: url(../img/sprite.png);
+  background-position: -112px -208px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_fb_hover {
+  background-image: url(../img/sprite.png);
+  background-position: -160px -208px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -104px;
+  width: 240px;
+  height: 104px;
+}
+.icon-ic_mail {
+  background-image: url(../img/sprite.png);
+  background-position: -256px -208px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_menu {
+  background-image: url(../img/sprite.png);
+  background-position: -240px -64px;
+  width: 70px;
+  height: 64px;
+}
+.icon-ic_menu_arrow_L {
+  background-image: url(../img/sprite.png);
+  background-position: -358px -244px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_menu_arrow_R {
+  background-image: url(../img/sprite.png);
+  background-position: -358px -212px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ic_phone {
+  background-image: url(../img/sprite.png);
+  background-position: -310px -144px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_ru_lang {
+  background-image: url(../img/sprite.png);
+  background-position: -358px 0px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_ru_lang_hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -273px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_schedule {
+  background-image: url(../img/sprite.png);
+  background-position: -48px -273px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_schedule_hover {
+  background-image: url(../img/sprite.png);
+  background-position: -96px -273px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_search {
+  background-image: url(../img/sprite.png);
+  background-position: -144px -273px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_search_hover {
+  background-image: url(../img/sprite.png);
+  background-position: -192px -273px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_slider_arrow_L {
+  background-image: url(../img/sprite.png);
+  background-position: -240px -128px;
+  width: 64px;
+  height: 65px;
+}
+.icon-ic_slider_arrow_R {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -208px;
+  width: 64px;
+  height: 65px;
+}
+.icon-ic_user_cabinet {
+  background-image: url(../img/sprite.png);
+  background-position: -310px -192px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_user_cabinet_hover {
+  background-image: url(../img/sprite.png);
+  background-position: -310px -96px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_vk {
+  background-image: url(../img/sprite.png);
+  background-position: -310px -48px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_vk_hover {
+  background-image: url(../img/sprite.png);
+  background-position: -288px -273px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_youtube {
+  background-image: url(../img/sprite.png);
+  background-position: -310px 0px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic_youtube_hover {
+  background-image: url(../img/sprite.png);
+  background-position: -208px -208px;
+  width: 48px;
+  height: 48px;
+}

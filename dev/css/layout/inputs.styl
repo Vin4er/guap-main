@@ -1,0 +1,123 @@
+﻿// // @import "variables.styl"
+// // тут оформляется input and form components
+
+html
+	body
+		.white
+			color: white
+		.italic
+			font-style: italic
+		.ib
+			display: inline-block
+		.dn
+			display none
+			
+		.left
+			text-align: left
+		.right
+			text-align right
+		.center
+			text-align center
+.table
+	display: table
+	table-layout: fixed
+	.table-row
+		display: table-row
+		.table-cell
+			display: table-cell
+
+.w100
+	width: 100%
+.w25
+	width: 25%
+.w20
+	width: 20%
+.w33
+	width 33.33%
+.clearfix
+	display block
+	clear both
+.wrap
+	max-width 1320px
+	min-width 300px
+	display block
+	position relative
+	margin auto
+	padding-right: 20px!important;
+	padding-left: 20px!important;
+	@media (max-width: 960px)
+		padding-left 0px
+		padding-right 0px
+
+.icon
+	display inline-block
+.material
+	font-family: 'Material Icons'
+	text-transform: lowercase
+	display inline-block
+	vertical-align middle
+
+
+.custom-scroll_bar-y
+	background: #E0E0E0
+	&:hover
+		background: #005bab
+		cursor: pointer
+
+
+
+html body #page
+
+
+	.mobile
+		display none !important;
+		@media (max-width: 660px)
+			display block !important;
+
+	.desktop
+		display block !important;
+		@media (max-width: 660px)
+			display: none !important;
+
+@media (max-width: 660px)
+	.swiper
+		&-button
+			width: 44px !important;
+			height: 45px !important;
+			&-prev
+				left: 15px !important;
+			&-next
+				right: 15px !important;
+	.info-component:not(.tab-hide)
+		position static
+	.tab-hide
+		position absolute!important
+
+	.info-component .info-component:after
+		display none
+.swiper
+	&-button
+		background-size:  contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		width 64px
+		height 65px
+		&-disabled
+			opacity: .54 !important
+		&-prev
+			background-image: url(/assets/img/sprite/ic_slider_arrow_L.png)
+			left 35px
+		&-next
+			background-image: url(/assets/img/sprite/ic_slider_arrow_R.png)
+			right 35px
+	&-pagination
+		bottom: 30px!important
+		&-bullet
+			background: white
+			width 12px
+			height 12px
+			cursor: pointer
+			&:hover
+				background: rgba(255,255,255,.54)
+			&-active
+				background: rgba(255,255,255,.54)

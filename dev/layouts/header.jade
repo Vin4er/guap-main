@@ -1,0 +1,182 @@
+﻿header.header
+	//- для десктопа
+	//- .desktop
+	.header-upper
+		.wrap
+			.table
+				.table-row
+					.table-cell.header-upper-left
+						ul
+							li
+								a(href="#")
+									span Школьникам
+							li
+								a(href="#")
+									span Поступающим
+							li
+								a(href="#")
+									span Обучающимся
+							li
+								a(href="#")
+									span Сотрудникам
+							li
+								a(href="#")
+									span Выпускникам
+							li
+								a(href="#")
+									span Партнерам
+					.table-cell.header-upper-right
+						ul
+							li
+								a(href="#")
+									i.icon.icon-ic_ru_lang
+							li
+								a(href="#")
+									i.icon.icon-ic_schedule
+							li
+								a(href="#")
+									i.icon.icon-ic_search
+							li
+								a(href="#")
+									i.icon.icon-ic_user_cabinet
+
+	.header-downer
+		.wrap
+			.header-downer-up
+				.table
+					.table-row
+						.table-cell.header-logo
+							a(href="/")
+								img(src="/assets/img/sprite/ic_logo.png", alt="")
+						.table-cell.header-nav
+							ul
+								li
+									a(href="#")
+										span Университет
+										span.pointer.material keyboard_arrow_down
+									.header-nav-items.dn
+										.header-nav-item(data-navigate-popup="Довузовское") Довузовское
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Дополнительное профессиональное") Дополнительное профессиональное
+
+								li
+									a(href="#")
+										span ОБРАЗОВАНИЕ
+										span.pointer.material keyboard_arrow_down
+									//- то что будет выпадать в слайдер
+									.header-nav-items.dn
+										.header-nav-item(data-navigate-popup="Довузовское") Довузовское
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Довузовское") Довузовское
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Довузовское") Довузовское
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Дополнительное профессиональное") Дополнительное профессиональное
+
+								li
+									a(href="#")
+										span НАУКА
+										span.pointer.material keyboard_arrow_down
+									.header-nav-items.dn
+										//- то что будет выпадать в слайдер
+										.header-nav-item(data-navigate-popup="Довузовское") Довузовское
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Дополнительное профессиональное") Дополнительное профессиональное
+
+								li
+									a(href="#")
+										span СОТРУДНИЧЕСТВО
+										span.pointer.material keyboard_arrow_down
+									.header-nav-items.dn
+										//- то что будет выпадать в слайдер
+										.header-nav-item(data-navigate-popup="Довузовское") Довузовское
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item(data-navigate-popup="Дополнительное профессиональное") Дополнительное профессиональное
+
+								li
+									a(href="#")
+										span ВНЕ УЧЕБЫ
+										span.pointer.material keyboard_arrow_down
+									.header-nav-items.dn
+										//- то что будет выпадать в слайдер
+										.header-nav-item(data-navigate-popup="Довузовское") Довузовское
+										.header-nav-item(data-navigate-popup="Аспирантура и докторантура") Аспирантура и докторантура
+										.header-nav-item(data-navigate-popup="Среднее профессиональное") Среднее профессиональное
+										.header-nav-item Дополнительное профессиональное
+
+		.header-downer-down
+			.header-downer-nav-slider
+				//- тут будет динамический слайдер из элементов .header-nav-items>.header-nav-item
+
+
+			.header-downer-popup
+				//-  тут будет собираться хранилище для всех возможнных попапов [data-navigate-popup=]
+				.header-downer-popup-item.dn(data-navigate-popup="Довузовское")
+					.table
+						.table-row
+							.table-cell.popup-item-photo
+								img(src="", alt="фото выпадахи")
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit rem libero blanditiis autem beatae aliquam aperiam quisquam voluptates ipsa. Inventore illum placeat repellat debitis nesciunt rem rerum deserunt harum.
+							.table-cell.popup-item-links
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+				
+				.header-downer-popup-item.dn(data-navigate-popup="Аспирантура и докторантура")
+					.table
+						.table-row
+							.table-cell.popup-item-photo
+								img(src="", alt="фото выпадахи")
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolores ab necessitatibus illum libero nisi aspernatur, molestiae vero mollitia at alias facilis nam reiciendis dolore, repudiandae officiis itaque sequi suscipit.
+							.table-cell.popup-item-links
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+				
+				.header-downer-popup-item.dn(data-navigate-popup="Среднее профессиональное")
+					.table
+						.table-row
+							.table-cell.popup-item-photo
+								img(src="", alt="фото выпадахи")
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti odit repellendus animi, alias, voluptates reiciendis recusandae unde, accusamus perferendis fugiat ratione autem odio architecto? Ex nobis asperiores, expedita quos explicabo!
+							.table-cell.popup-item-links
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+				
+				.header-downer-popup-item.dn(data-navigate-popup="Дополнительное профессиональное")
+					.table
+						.table-row
+							.table-cell.popup-item-photo
+								img(src="", alt="фото выпадахи")
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique repellat, minus aspernatur, deserunt dolores labore animi ab laudantium expedita dolor consequatur iusto ipsa, iure provident dolorum voluptatibus modi velit voluptate.
+							.table-cell.popup-item-links
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+								a(href="#") О факультете
+
+

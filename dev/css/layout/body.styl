@@ -1,0 +1,521 @@
+﻿.main
+	&-news
+		font-size 0
+
+		.wrap
+			padding 0
+		&-items
+			margin-left -15px
+			margin-right -15px
+		@media (max-width: 660px)
+			.swiper-pagination
+				bottom: -20px !important;
+				width: 100%;
+				text-align: center;
+				left: 0;
+				.swiper-pagination-bullet
+					background: #e2edf6
+					display inline-block
+					margin-left: 6px
+					margin-right 6px
+					opacity 1
+				.swiper-pagination-bullet-active
+					background: rgb(204, 222, 238)
+		&-item
+			background: #F5F5F5
+			margin-bottom 30px
+			padding-bottom 50px
+			font-size 14px
+			width: calc( 33.3333% - 30px )
+			margin-left 15px
+			margin-right: 15px
+			border-radius 10px
+			overflow hidden
+			position relative
+			text-decoration none !important
+			color black
+			display inline-block
+			@media (max-width: 1279px)  and (min-width: 660px) 
+				width: calc(33.3333% - 20px);
+				margin-left: 10px;
+				margin-bottom: 20px;
+				padding-bottom: 40px;
+				margin-right: 10px;
+			@media (max-width: 660px)
+				margin-bottom: 0px
+				width 100% !important
+				margin-left: 0px;
+				margin-right: 0px;
+			&:after
+				content attr(data-date)
+				font-size 12px
+				text-transform: uppercase
+				color rgba(0,0,0,.5)
+				position absolute
+				bottom 30px
+				left 30px
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					font-size: 10px;
+					bottom: 12px;
+					left: 20px;
+				@media (max-width: 660px)
+					font-size: 13px;
+					bottom: 20px;
+					left: 20px;
+			&-text
+				padding 30px
+				padding-bottom 0
+				height 145px
+				overflow hidden
+				font-size: 16px
+				line-height 22px
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					padding: 20px;
+					padding-bottom: 0;
+					height: 100px;
+					overflow: hidden;
+					font-size: 14px;
+					line-height: 18px;
+				@media (max-width: 660px)
+					padding: 30px 20px;
+					padding-bottom: 0;
+					height: 143px;
+					font-size: 15px;
+					line-height: 20px;
+				b
+					color #005BAB
+					font-weight: bold
+					font-size 17px
+					@media (max-width: 1279px)
+						font-weight: bold;
+						font-size: 15px;
+			&-image
+				height 240px
+				background-size cover
+				background-repeat no-repeat
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					height 175px
+				@media (max-width: 660px)
+					height: 235px;
+
+
+	&-poltavchenko
+		background: #005BAB
+		height 480px
+		color white
+		@media (max-width: 1279px) and (min-width: 660px) 
+			height: 340px
+		@media (max-width: 660px)
+			height: 480px
+		.swiper-container
+			height: 480px
+			@media (max-width: 1279px) and (min-width: 660px) 
+				height: 340px
+			@media (max-width: 660px)
+				height: 480px
+			.swiper-slide
+				height: 480px
+				background-repeat: no-repeat
+				background-size: 60%;
+				@media (max-width: 1279px) and (min-width: 660px) 
+					height: 340px
+				@media (max-width: 660px)
+					height: 480px
+		&-text
+			padding-right: 40%
+			padding-top 100px
+			font-size 24px
+			line-height: 32px
+			padding-bottom 40px
+			@media (max-width: 1279px) and (min-width: 660px) 
+				padding-right: 32%;
+				padding-top: 64px;
+				font-size: 18px;
+				line-height: 24px;
+				padding-bottom: 21px;
+			@media (max-width: 660px)
+				padding-right: 2%;
+				padding-top: 34px;
+				font-size: 21px;
+				line-height: 28px;
+				padding-bottom: 27px;
+		&-quote
+			padding-right: 40%
+			&-title
+				font-size 30px
+				font-weight: bold
+				line-height 24px
+				padding-bottom 8px
+				display block
+				@media (max-width: 1279px) and (min-width: 660px) 
+					font-size: 24px;
+					font-weight: bold;
+					line-height: 24px;
+					padding-bottom: 0px;
+					display: block;
+				@media (max-width: 660px)
+					font-size: 15px;
+					line-height: 28px;
+			&-text
+				font-size: 18px
+				line-height 24px
+				color: rgba(255,255,255,.5)
+				@media (max-width: 1279px)
+					font-size: 14px;
+					line-height: 18px;
+
+
+
+	&-mapsite
+		padding-top 60px
+		padding-bottom 30px
+		.table
+			&-cell
+				width: 33%;
+		&-title
+			font-size 24px
+			line-height 24px
+			font-weight: bold
+			padding-bottom 14px
+			padding-right 15px
+			padding-left 0
+			@media (max-width: 1279px)
+				line-height 20px
+				padding-bottom 12px
+		ul
+			padding-left 0
+			list-style-type: none
+			li
+				list-style-type: none
+				padding-bottom 10px
+				padding-left: 0
+				line-height 15px
+				font-size 14px
+				padding-right 10px
+				a
+					color #005BAB
+		.table
+			margin-bottom 0
+
+
+	&-innovation
+		padding-top: 40px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		margin-bottom: 50px;
+		@media (max-width: 1279px)  and (min-width: 660px) 
+			padding-top: 30px;
+			margin-bottom: 37px;
+		.table
+			background: transparent
+			table-layout: auto
+			margin-bottom 0
+		.wrap
+			padding-left 0
+			padding-right 0
+			&>.table
+				background: transparent
+				margin-left -25px
+				margin-right -25px
+				vertical-align top
+				@media (max-width: 1279px)
+					margin-left -10px
+					margin-right -10px
+				&>.table-row
+					&>.table-cell
+						width: 33.3333%
+						padding-left: 25px;
+						padding-right: 25px;
+						vertical-align: top;
+						@media (max-width: 1279px)
+							padding-left 10px
+							padding-right 10px
+		&-news
+			@media (max-width: 660px)
+				padding-top: 15px;
+			.info-component
+				height: 480px
+				position relative
+				border-radius 10px
+				overflow hidden
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					height 400px
+				@media (max-width: 660px)
+					height: 473px;
+				&:after
+					content ''
+					background: linear-gradient(to bottom,  rgba(245,245,245,0) 0%,rgba(245,245,245,1) 52%,rgba(245,245,245,1) 100%); 
+					display: block;
+					height: 60px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					z-index: 1;
+					width: 100%;
+					@media (max-width: 660px)
+						height: 60px;
+						position: absolute;
+						bottom: 0;
+						left: 20px;
+						z-index: 1;
+						right: 20px;
+						width: auto;
+				.table
+					.table-cell
+						vertical-align top
+				&-title 
+					height 70px
+					line-height 70px
+					text-transform: uppercase
+					color white
+					background: #005BAB
+					font-size 32px
+					font-weight: bold
+					text-align: center
+					@media (max-width: 1279px)  and (min-width: 660px) 
+						font-size 24px
+						height 50px
+						line-height 50px
+					@media (max-width: 660px)
+						font-size: 0
+						height: 72px;
+						line-height: 72px;
+						white-space: nowrap
+						a
+							display inline-block
+							vertical-align: middle
+							width 50%
+							font-size 24px
+							white-space: normal
+							background: #2d76b6
+							color white
+							text-decoration none
+							&.active
+								background: #005BAB
+				&-content
+					background: #F5F5F5
+					overflow auto
+					height: 410px
+					padding-top 25px
+					padding-bottom: 25px
+					padding-right 10px
+					@media (max-width: 1279px) and (min-width: 660px) 
+						height: 350px
+					@media (max-width: 660px)
+						height: 405px;
+				&-item
+					font-size 18px
+					padding-bottom 30px
+					color rgba(0,0,0,.7)
+					&:hover
+						color #005BAB
+					@media (max-width: 1279px) and (min-width: 660px) 
+						font-size: 14px;
+						padding-bottom: 18px;
+					@media (max-width: 660px)
+						font-size: 22px;
+						padding-bottom: 18px;
+						line-height: 24px;
+				.label, .date
+					width 65px
+					text-align center
+					line-height 18px
+					b
+						font-size 26px
+						display block
+						color #005BAB
+					i
+						font-size 14px
+						display block
+						color #005BAB
+						font-style: normal
+		&-banners
+			.swiper-container
+				height: 480px
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					height 400px
+				@media (max-width: 660px)
+					height: 473px;
+				.swiper-slide
+					height: 480px
+					background-size cover
+					background-position center
+					border-radius 40px 10px
+					background-repeat: no-repeat
+					@media (max-width: 1279px)  and (min-width: 660px) 
+						height 400px
+					@media (max-width: 660px)
+						height: 464px;
+	&-activity
+		padding-bottom 45px
+		padding-top 45px
+		@media (max-width: 1279px)  and (min-width: 660px) 
+			padding-top: 60px;
+		@media (max-width: 660px)
+			padding-top: 37px;
+			padding-bottom: 15px
+			.big-block
+				margin-bottom: 20px;
+			.tabs-header
+				a
+					margin-right: 20px!important;
+					font-size: 17px!important;
+		.wrap
+			padding 0
+		&-slider
+			.swiper-container
+				height: 480px
+				@media (max-width: 660px)
+					height: 238px
+				.swiper-slide
+					height: 480px
+					background: #005BAB
+					padding-left 140px
+					padding-top 100px
+					padding-right 60%
+					color white
+					border-radius 40px 10px
+					@media (max-width: 660px)
+						padding-left: 80px;
+						padding-top: 84px;
+						height: 238px
+			&-title
+				font-size 64px
+				font-weight: bold
+				line-height 64px
+				padding-bottom 10px
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					font-size: 56px;
+					font-weight: bold
+					line-height: 60px
+					padding-bottom: 10px
+					padding-top: 14px;
+				@media (max-width: 660px)
+					font-size: 25px
+					font-weight: bold
+					line-height: 29px
+			&-text
+				font-size 18px
+				line-height 26px
+				@media (max-width: 660px)
+					display none
+	&-slider
+		height 600px
+		@media (max-width: 1279px)
+			height 500px
+		@media (max-width: 660px) 
+			height 300px
+		margin: auto
+		.swiper-container
+			height 600px
+			@media (max-width: 1279px)  and (min-width: 660px) 
+				height 500px
+			@media (max-width: 660px)
+				height 300px
+			.swiper-slide
+				height: inherit
+				color white
+				background-size cover
+				background-repeat no-repeat
+				background-position: center
+				padding-top 120px
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					padding-top 70px
+				@media (max-width: 660px) 
+					padding-top 60px
+		&-item
+			&-title
+				font-size 64px
+				font-weight: bold
+				line-height 64px
+				padding-bottom 21px
+				font-size: 42px;
+				@media (max-width: 660px) 
+					font-weight: bold;
+					line-height: 43px;
+					padding-bottom: 57px;
+			&-paragraph
+				font-size: 18px
+				line-height 26px
+				padding-bottom 75px
+				@media (max-width: 1279px)  and (min-width: 660px) 
+					padding-bottom 60px
+					font-size: 14px
+					line-height 22px
+				@media (max-width: 660px) 
+					display none
+			&-button
+				a
+					width: 192px
+					border: 2px solid white
+					display inline-block
+					height 56px
+					line-height 56px
+					vertical-align middle
+					border-radius 40px
+					font-size 17px
+					font-weight: bold
+					padding 0
+					text-align center
+					color white
+					text-transform: uppercase
+					&:hover
+						text-decoration none
+						color white
+						border: 2px solid white
+					@media (max-width: 660px) 
+						width: 172px;
+						border: 2px solid #fff;
+						display: inline-block;
+						height: 46px;
+						line-height: 42px;
+						vertical-align: middle;
+						border-radius: 40px;
+						font-size: 16px;
+						
+.big-block
+	padding-bottom: 10px
+	border-bottom: 4px solid #005BAB
+	margin-bottom 30px
+
+	&-nob
+		border-bottom: 1px solid rgba(0,0,0,0.5);
+		padding-bottom: 0;
+	&-title
+		&-main
+			display inline-block
+			max-width: 70%
+			text-transform: uppercase
+			font-size 40px
+			font-weight: bold
+			line-height: 45px;
+		&-link
+			float: right
+			font-size 16px
+			text-transform: uppercase
+			font-weight: bold
+			position: relative;
+			top: 22px;
+			span
+				display inline-block
+				vertical-align middle
+	.tabs-header
+		font-size 32px
+		a
+			display inline-block
+			margin-right 30px
+			font-size 32px
+			color black
+			text-decoration none
+			border-bottom 4px solid transparent
+			&.active
+				border-bottom-color #005BAB !important
+			&:hover
+				border-bottom-color #E0E0E0
+.tab-hide
+	position absolute
+	left: -9999999px;
+	width: 100%
+	height 100%
+.tabs-body
+	position relative

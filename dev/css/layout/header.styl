@@ -1,0 +1,96 @@
+﻿.header
+	&-logo
+		a
+			display inline-block
+			vertical-align middle
+			img
+				width: 240px
+				display block
+				@media (max-width: 1279px)
+					width: 172px
+	&-nav
+		vertical-align middle
+		text-align right
+		
+		ul
+			margin 0
+			vertical-align middle
+			height 104px
+			display inline-block
+			vertical-align middle
+			line-height 104px
+			text-align right
+			@media (max-width: 1279px)
+				line-height 88px
+				height 88px
+			li
+				display inline-block
+				margin 0
+				margin-left: 45px
+				@media (max-width: 1279px)
+					margin-left: 20px
+				&:nth-child(1)
+					margin 0
+				a
+					text-decoration none
+					font-size 20px
+					font-weight: bold
+					text-transform: uppercase
+					color #005BAB
+					@media (max-width: 1279px)
+						font-size 16px
+					
+	&-upper
+		background: #F5F5F5
+		height 48px
+		vertical-align middle
+		.table
+			height 48px
+			vertical-align middle
+			margin 0
+			padding 0
+			width 100%
+			table-layout: auto
+			&-cell
+				vertical-align middle
+		ul
+			margin 0
+			height 48px
+			display inline-block
+			vertical-align middle
+			line-height 48px
+			width: 100%
+			li
+				display inline-block
+				margin 0
+				margin-right: 23px
+				a
+					color #005BAB
+					text-decoration none
+					font-size 14px
+		&-left
+			text-align: left
+		&-right
+			text-align right
+			ul
+				text-align right
+				line-height: 48px;
+				li
+					display inline-block
+					margin-left: 0
+					margin-right: 0px
+	&-downer
+		&-up
+			.table
+				height 104px
+				vertical-align middle
+				margin 0
+				table-layout: auto
+				padding 0
+				width 100%
+				&-cell
+					vertical-align middle
+				@media (max-width: 1279px)
+					height 88px
+		&-down
+			height: auto

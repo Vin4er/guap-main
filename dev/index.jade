@@ -1,0 +1,518 @@
+//- подключаем шаблон
+extends /layouts/layout.jade
+
+
+//- Описывам контент
+block content
+
+	//- img(src="/Suai_480.png", alt="", style="       position: absolute; z-index: 99; opacity: 0.2; left: 0px; top: 82px; z-index: 9999;")
+
+	//- БЛОК С ГЛАВНЫМ СЛАЙДЕРОМ
+	.main-slider
+		.swiper-container
+			.main-slider-items.swiper-wrapper
+				.main-slider-item.swiper-slide.main-slider-item-image(style="background-image: url(/assets/img/Mainslider.png)")
+					.wrap
+						.main-slider-item-text
+							.main-slider-item-title НА СТАРТ#[br]В ГУАП
+							.main-slider-item-paragraph.
+								Новый учебный год, новые студенты,#[br]новый бренд университета — в ГУАПе#[br]прошел «День знаний 2016»
+							.main-slider-item-button
+								a.btn(href="#") Подробнее
+				.main-slider-item.swiper-slide.main-slider-item-image(style="background-image: url(/assets/img/Mainslider.png)")
+					.wrap
+						.main-slider-item-text
+							.main-slider-item-title НА СТАРТ#[br]В ГУАП
+							.main-slider-item-paragraph.
+								Новый учебный год, новые студенты,#[br]новый бренд университета — в ГУАПе#[br]прошел «День знаний 2016»
+							.main-slider-item-button
+								a.btn(href="#") Подробнее
+			.swiper-pagination
+
+
+
+	//- БЛОК С  ОБЪЯВЛЕНИЯМИ И МЕРОПРИЯТИЯМИ
+	.main-innovation
+		.wrap
+			.mobile
+				.main-innovation-banners
+						//- СЛАЙДЕР
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+								.swiper-slide(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+								.swiper-slide(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+							.swiper-pagination
+				.main-innovation-news
+					.info-component
+						.info-component-title
+							.tabs
+								.tabs-header
+									a(href="#ОБЪЯВЛЕНИЯ").active ОБЪЯВЛЕНИЯ
+									a(href="#МЕРОПРИЯТИЯ") МЕРОПРИЯТИЯ
+						.tabs-body
+							.info-component.info-component-ads(data-tab="ОБЪЯВЛЕНИЯ")
+								.info-component-content
+									.info-component-item
+										.table
+											.table-row
+												.table-cell.label
+													span.icon.icon-ic_announce
+												.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+									.info-component-item
+										.table
+											.table-row
+												.table-cell.label
+													span.icon.icon-ic_announce
+												.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+							.info-component.info-component-events.tab-hide(data-tab="МЕРОПРИЯТИЯ")
+								.info-component-content
+									.info-component-item
+										.table
+											.table-row
+												.table-cell.date
+													b 19
+													i СЕН
+												.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+									.info-component-item
+										.table
+											.table-row
+												.table-cell.date
+													b 19
+													i СЕН
+												.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+									.info-component-item
+										.table
+											.table-row
+												.table-cell.date
+													b 19
+													i СЕН
+												.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+									.info-component-item
+										.table
+											.table-row
+												.table-cell.date
+													b 19
+													i СЕН
+												.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+									.info-component-item
+										.table
+											.table-row
+												.table-cell.date
+													b 19
+													i СЕН
+												.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+
+			.table.desktop
+				.table-row
+					.table-cell.main-innovation-news
+						//- ОБЪЯВЛЕНИЯ
+						.info-component.info-component-ads
+							.info-component-title ОБЪЯВЛЕНИЯ
+							.info-component-content
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.label
+												span.icon.icon-ic_announce
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+
+
+					.table-cell.main-innovation-banners
+						//- СЛАЙДЕР
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+								.swiper-slide(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+								.swiper-slide(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+							.swiper-pagination
+
+
+
+
+					.table-cell.main-innovation-news
+						//- МЕРОПРИЯТИЯ
+						.info-component.info-component-events
+							.info-component-title МЕРОПРИЯТИЯ
+							.info-component-content
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.date
+												b 19
+												i СЕН
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.date
+												b 19
+												i СЕН
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.date
+												b 19
+												i СЕН
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.date
+												b 19
+												i СЕН
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+								.info-component-item
+									.table
+										.table-row
+											.table-cell.date
+												b 19
+												i СЕН
+											.table-cell.text Институт инновационных технологий в электромеханике и робототехнике приглашает пройти обучение в магистратуре
+
+
+
+
+
+	//- БЛОК  НВОСТЕЙ
+	.main-news
+		.wrap
+			.big-block.main-news-title
+				.big-block-title-main.main-news-title-main Новости
+				.big-block-title-link.main-news-title-link
+					a(href="#")
+						span Все новости 
+						span.material keyboard_arrow_right
+			.desktop
+				.main-news-items
+					a(href="#", data-date="25 мая").main-news-item
+						.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+						.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+					a(href="#", data-date="25 мая").main-news-item
+						.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+						.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+					a(href="#", data-date="25 мая").main-news-item
+						.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+						.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+					a(href="#", data-date="25 мая").main-news-item
+						.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+						.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+					a(href="#", data-date="25 мая").main-news-item
+						.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+						.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+			.mobile
+				.swiper-container
+					.swiper-wrapper
+						a(href="#", data-date="25 мая").main-news-item.swiper-slide
+							.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+							.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+
+						a(href="#", data-date="25 мая").main-news-item.swiper-slide
+							.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+							.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+
+						a(href="#", data-date="25 мая").main-news-item.swiper-slide
+							.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
+							.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
+				.swiper-pagination
+
+	//- БЛОК  АКТИВНОСТЬ
+	.main-activity
+		.wrap
+			.big-block.big-block-nob.main-activity-title
+				.big-block-title-main.main-activity-title-main
+					.tabs
+						.tabs-header
+							a(href="#Наука").active Наука
+							a(href="#Спорт") Спорт
+							a(href="#Творчество") Творчество
+				.big-block-title-link.main-activity-title-link
+					a(href="#")
+						span все активности
+						span.material keyboard_arrow_right
+			//- табы
+			.main-activity-sliders.tabs
+				.tabs-body
+					.main-activity-slider(data-tab="Наука")
+						//- СЛАЙДЕР
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide
+									.main-activity-slider-title Вокальная студия
+									.main-activity-slider-text Наши педагоги по вокалу — действующие музыканты, регулярно выходящие на сцену
+								.swiper-slide
+									.main-activity-slider-title Вокasdasdя
+									.main-activity-slider-text Наши педsadasdasdвыходящие на сцену
+							.swiper-pagination
+							.swiper-button-prev.swiper-button
+							.swiper-button-next.swiper-button
+
+					.main-activity-slider.tab-hide(data-tab="Спорт")
+						//- СЛАЙДЕР
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide
+									.main-activity-slider-title Вокasdasdя
+									.main-activity-slider-text Наши педагоги по вокалу — действующие музыканты, регулярно выходящие на сцену
+								.swiper-slide
+									.main-activity-slider-title DSDASdasdasd
+									.main-activity-slider-text Наши педsadasdasdвыходящие на сцену
+							.swiper-pagination
+							.swiper-button-prev.swiper-button
+							.swiper-button-next.swiper-button
+
+					.main-activity-slider.tab-hide(data-tab="Творчество")
+						//- СЛАЙДЕР
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide
+									.main-activity-slider-title Творчество
+									.main-activity-slider-text Наши педагоги по вокалу — действующие музыканты, регулярно выходящие на сцену
+								.swiper-slide
+									.main-activity-slider-title Творчество
+									.main-activity-slider-text Наши педsadasdasdвыходящие на сцену
+							.swiper-pagination
+							.swiper-button-prev.swiper-button
+							.swiper-button-next.swiper-button
+
+
+
+	//- БЛОК  АКТИВНОСТЬ
+	.main-poltavchenko
+		.wrap
+			//- СЛАЙДЕР
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide(style="background-image: url(/assets/img/poltav.png);background-position: right bottom;  ")
+						.main-poltavchenko-text.
+							«На протяжении многих десятилетий выпускники ГУАПа – генеральные конструкторы, главные инженеры, руководители крупных промышленных предприятий – определяют облик авиационной, космической и приборостроительной отраслей»
+						.main-poltavchenko-quote
+							.main-poltavchenko-quote-title — Полтавченко Георгий Сергеевич
+							.main-poltavchenko-quote-text Губернатор Санкт-Петербурга, выпускник Института аэрокосмических приборов и систем
+					.swiper-slide(style="background-image: url(/assets/img/poltav.png);background-position: right bottom;  ")
+						.main-poltavchenko-text.
+							«Nam dignissimos quae excepturi, architecto fuga repudiandae. Fuga sed quod quibusdam, odio, enim debitis blanditiis id eaque in obcaecati optio aut ea.»
+						.main-poltavchenko-quote
+							.main-poltavchenko-quote-title — Олег Васильевич
+							.main-poltavchenko-quote-text Губернатор Санкт-Петербурга, выпускник Института аэрокосмических приборов и систем
+					.swiper-slide(style="background-image: url(/assets/img/poltav.png);background-position: right bottom;  ")
+						.main-poltavchenko-text.
+							«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere ad culpa, laudantium numquam nam rem debitis. Amet eligendi maiores fuga assumenda nam molestias, accusamus veritatis maxime, quisquam voluptatem iure!»
+						.main-poltavchenko-quote
+							.main-poltavchenko-quote-title — Георгий Сергеевич Полтавченко
+							.main-poltavchenko-quote-text Губернатор Санкт-Петербурга, выпускник Института аэрокосмических приборов и систем, выпускник Института аэрокосмических приборов и систем, выпускник Института аэрокосмических приборов и систем
+
+				.swiper-pagination
+
+
+
+	//- БЛОК  мапсайт
+	.main-mapsite
+		.wrap
+			.table
+				.table-row
+					.table-cell
+						.main-mapsite-title Об университете
+						ul.main-mapsite-list
+							li
+								a(href="#") Сведения об образовательной организации
+							li
+								a(href="#") Преподаватели и сотрудники
+							li
+								a(href="#") Руководство и структура
+							li
+								a(href="#") Сведения о доходах
+							li
+								a(href="#") Наука и образование против террора
+							li
+								a(href="#") Корпуса и общежития
+					.table-cell
+						.main-mapsite-title Ресурсы вуза
+						ul.main-mapsite-list
+							li
+								a(href="#") Сведения об образовательной организации
+							li
+								a(href="#") Преподаватели и сотрудники
+							li
+								a(href="#") Руководство и структура
+							li
+								a(href="#") Сведения о доходах
+							li
+								a(href="#") Информация Рособрнадзора для поступающих
+							li
+								a(href="#") Информационная система «Единое окно доступа к образовательным ресурсам»
+							li
+								a(href="#") Наука и образование против террора
+							li
+								a(href="#") Корпуса и общежития
+					.table-cell
+						.main-mapsite-title Полезные ссылки
+						ul.main-mapsite-list
+							li
+								a(href="#") Сведения об образовательной организации
+							li
+								a(href="#") Преподаватели и сотрудники
+							li
+								a(href="#") Информационная система «Единое окно доступа к образовательным ресурсам»
+							li
+								a(href="#") Сведения о доходах
+							li
+								a(href="#") Информация Рособрнадзора для поступающих
+							li
+								a(href="#") Внутренний сервер СПС Кодекс
+							li
+								a(href="#") Наука и образование против террора
+							li
+								a(href="#") Корпуса и общежития

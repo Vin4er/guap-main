@@ -1,0 +1,16 @@
+﻿//- layout.jade
+doctype html
+html
+	head
+		include head.jade
+	body
+		.page#page
+			include header.jade
+			include nav.jade
+				section#content.content
+					
+					block content
+			include footer.jade
+			include modals.jade
+		include scripts
+
