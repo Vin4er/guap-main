@@ -111,7 +111,7 @@ var app = {};
 			$('.swiper-container').each(function() {
 				var $this = $(this),
 					// пагинация
-					$pag = $this.find('.swiper-pagination'),
+					$pag = $this.closest('.wrap').find('.swiper-pagination'),
 					// слайды
 					$slides = $this.find('.swiper-slide'),
 					// счетчик слайдов
@@ -131,7 +131,7 @@ var app = {};
 					pagination: isPag ? $pag[0] : null,
 					paginationClickable: isPag ? true : false,
 					prevButton: isArrow ? $arrows[0] : null,
-					prevButton: isArrow ? $arrows[0] : null,
+					nextButton: isArrow ? $arrows[1] : null,
 					autoplay: autoplay ? autoplay : null,
 					loop: isLoop
 				}));
