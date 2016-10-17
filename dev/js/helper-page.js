@@ -32,12 +32,11 @@ var app = {};
 					var $this = $(this),
 						allLi = $('.header-nav li');
 
-					if ($this.hasClass('hover')) {
-						downPane.empty();
-						$('.header-downer-popup-item').removeClass('shower');
-						$('.header-nav li, [data-navigate-popup].header-nav-item').removeClass('hover');
-						return false;
-					}
+					
+					$('.header-downer-popup-item').removeClass('shower');
+					$('.header-nav li, [data-navigate-popup].header-nav-item').removeClass('hover');
+						
+				
 
 					var $content = $this.find('.swiper-wrapper'),
 						$swiper = $content.clone().wrap('<div class="swiper-container" />', {}),
@@ -100,7 +99,7 @@ var app = {};
 				e.preventDefault();
 				var $this = $(this);
 				$this.closest('.tabs-header').find('a').removeClass('active').filter($this).addClass('active');
-				$('.tabs-body').find('[data-tab]').addClass('tab-hide').filter('[data-tab="' + $this[0].hash.substr(1) + '"]').removeClass('tab-hide');
+				$this.closest('.wrap').find('.tabs-body [data-tab]').addClass('tab-hide').filter('[data-tab="' + $this[0].hash.substr(1) + '"]').removeClass('tab-hide');
 			});
 		},
 
