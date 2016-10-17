@@ -71,15 +71,15 @@ html body #page
 
 	.mobile
 		display none !important;
-		@media (max-width: 660px)
+		@media (max-width: 940px)
 			display block !important;
 
 	.desktop
 		display block !important;
-		@media (max-width: 660px)
+		@media (max-width: 940px)
 			display: none !important;
 
-@media (max-width: 660px)
+@media (max-width: 940px)
 	.swiper
 		&-button
 			width: 44px !important;
@@ -95,6 +95,15 @@ html body #page
 
 	.info-component .info-component:after
 		display none
+
+[class*='_hover']
+	display none
+a:hover
+	.icon
+		display none
+		&[class*='_hover']
+			display inline-block
+
 .swiper
 	&-button
 		background-size:  contain;

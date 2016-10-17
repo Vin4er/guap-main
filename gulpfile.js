@@ -78,6 +78,7 @@ gulp.task('js', function() {
 			"./dev/js/lib/jquery/jquery.min.js",
 			"./dev/js/lib/swiper/swiper.jquery.js",
 			"./dev/js/lib/custom-scroll/jquery.custom-scroll.js",
+			"./dev/js/lib/dotdotdot/jquery.dotdotdot.js",
 			"./dev/js/helper-page.js"
 		])
 		.pipe(concat('app.min.js'))
