@@ -11,7 +11,6 @@
 	&-nav
 		vertical-align middle
 		text-align right
-		
 		ul
 			margin 0
 			vertical-align middle
@@ -31,6 +30,15 @@
 					margin-left: 20px
 				&:nth-child(1)
 					margin 0
+					
+				&:hover
+					opacity: 0.5
+				&.hover
+					opacity: 0.5
+					.material
+						transform: rotate(180deg)
+						position: relative
+						top: -2px
 				a
 					text-decoration none
 					font-size 20px
@@ -39,7 +47,11 @@
 					color #005BAB
 					@media (max-width: 1279px)
 						font-size 16px
-					
+		&-item
+			display: inline-block
+			width: auto
+			&.hover, &:hover
+				background rgb(26,108,180)
 	&-upper
 		background: #F5F5F5
 		height 48px
@@ -80,6 +92,61 @@
 					margin-left: 0
 					margin-right: 0px
 	&-downer
+		&-popup
+			position: relative
+			&-item
+				overflow: hidden
+				&-photo
+					width: 33%
+					padding-right: 40px
+					p
+						padding-left: 20px;
+						color: rgba(0,0,0,0.5)
+						padding-top: 10px;
+						padding-right 20px;
+					img
+						max-width: 340px
+						display: block;
+						width: 100%
+						max-height: 145px
+						border-radius: 40px 10px;
+				&-links
+					vertical-align: top
+					margin-bottom: 20px
+					font-size: 0
+					border-left: 1px solid rgba(0,0,0,0.28)
+					column-count: 2;
+					div
+						display block
+						font-size: 14px
+						padding-right: 10px;
+						padding-left 40px
+						a
+							margin-bottom: 20px
+							display inline-block
+							span
+								color: #005bab;
+								font-size: 16px;
+								@media (max-width: 1279px)
+									ont-size: 14px;
+			&-item
+				background: white
+				position: absolute
+				padding 30px 60px
+				&.shower
+					position: absolute;
+					display: block;
+					z-index: 10;
+					left: 0;
+					top: 0;
+					box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.37);
+					border-radius: 0 0 10px 10px;
+				.table
+					width: 100%
+					vertical-align: top
+					&-cell
+						vertical-align: top
+
 		&-up
 			.table
 				height 104px
@@ -93,4 +160,61 @@
 				@media (max-width: 1279px)
 					height 88px
 		&-down
-			height: auto
+			background: #005bab;
+			max-height: 150px;
+			vertical-align: middle;
+			position: absolute;
+			z-index: 9;
+			width: 100%;
+			font-size: 16px;
+			@media (max-width: 1279px)
+				font-size: 14px;
+			.header-downer-nav-slider
+				a
+					color: white
+					line-height 90px
+					height: 90px
+					display: inline-block
+					width: 192px
+					text-align: center
+					padding-left: 10px
+					padding-right: 10px
+					span
+						display: inline-block
+						vertical-align middle
+						line-height: normal
+						font-size: 16px
+
+		&-nav
+			&-slider
+				padding-left: 20px
+				padding-right: 20px
+				position: relative
+				font-size: 16px;
+				@media (max-width: 1279px)
+					font-size: 14px;
+				&:before, &:after
+					content: "";
+					display: block;
+					position: absolute;
+					width: 40px;
+					height: 100%;
+					z-index: 8;
+					top: 0px;
+				&:after
+					right: 19px;
+					background: linear-gradient(to right,  rgba(0,91,171,0) 0%,rgba(0,91,171,0.72) 53%,rgba(0,91,171,1) 100%)
+				&:before
+					left: 19px;
+					background: linear-gradient(to left,  rgba(0,91,171,0) 0%,rgba(0,91,171,0.72) 53%,rgba(0,91,171,1) 100%)
+
+				.swiper-button
+					color: white;
+					font-size: 32px;
+					width: auto !important;
+					height: auto !important;
+					background: transparent
+					&-prev
+						left: 0px;
+					&-next
+						right: 0px;
