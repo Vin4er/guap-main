@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 		<meta name="viewport" content="width=480, user-scalable=no">
 		<meta name="format-detection">
 		<title>ГУАП</title>
@@ -37,7 +37,7 @@
 								</div>
 								<div class="table-cell header-upper-right">
 									<ul>
-										<li><a href="#"><i class="icon icon-ic_ru_lang"></i><i class="icon icon-ic_ru_lang_hover"></i></a></li>
+										<li><a href="#" class="desktop"><i class="icon icon-ic_ru_lang"></i><i class="icon icon-ic_ru_lang_hover"></i></a></li>
 										<li><a href="#"><i class="icon icon-ic_schedule"></i><i class="icon icon-ic_schedule_hover"></i></a></li>
 										<li><a href="#"><i class="icon icon-ic_search"></i><i class="icon icon-ic_search_hover"></i></a></li>
 										<li><a href="#"><i class="icon icon-ic_user_cabinet"></i><i class="icon icon-ic_user_cabinet_hover"></i></a></li>
@@ -163,7 +163,7 @@
 			</header>
 			<section id="content" class="content">
 				<div class="main-slider">
-					<div class="swiper-container">
+					<div data-autoplay="3000" class="swiper-container">
 						<div class="main-slider-items swiper-wrapper">
 							<div style="background-image: url(/assets/img/1.jpg)" class="main-slider-item swiper-slide main-slider-item-image">
 								<div class="wrap">
@@ -204,11 +204,11 @@
 								<div class="info-component">
 									<div class="info-component-title">
 										<div class="tabs">
-											<div class="tabs-header"><a href="#ADS" class="active">ОБЪЯВЛЕНИЯ</a><a href="#PARTY">МЕРОПРИЯТИЯ</a></div>
+											<div class="tabs-header"><a href="#ADS">ОБЪЯВЛЕНИЯ</a><a href="#PARTY">МЕРОПРИЯТИЯ</a></div>
 										</div>
 									</div>
 									<div class="tabs-body">
-										<div data-tab="ADS" class="info-component info-component-ads">
+										<div data-tab="ADS" class="info-component info-component-ads tab-hide">
 											<div class="info-component-content"><a href="#" class="info-component-item">
 													<div class="table">
 														<div class="table-row">
@@ -614,7 +614,7 @@
 									<div class="main-news-item-text"><b>Звание «Почётный гражданин Петербурга»</b> присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову</div></a></div>
 						</div>
 						<div class="mobile">
-							<div class="swiper-container">
+							<div data-autoplay="3000" class="swiper-container">
 								<div class="swiper-wrapper"><a href="#" data-date="25 мая" class="main-news-item swiper-slide">
 										<div style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)" class="main-news-item-image"></div>
 										<div class="main-news-item-text"><b>Звание «Почётный гражданин Петербурга»</b> присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову</div></a><a href="#" data-date="25 мая" class="main-news-item swiper-slide">
@@ -632,15 +632,15 @@
 						<div class="big-block big-block-nob main-activity-title">
 							<div class="big-block-title-main main-activity-title-main">
 								<div class="tabs">
-									<div class="tabs-header"><a href="#science" class="active">Наука</a><a href="#sport">Спорт</a><a href="#creation">Творчество</a></div>
+									<div class="tabs-header"><a href="#science">Наука</a><a href="#sport">Спорт</a><a href="#creation">Творчество</a></div>
 								</div>
 							</div>
 							<div class="big-block-title-link main-activity-title-link"><a href="#"><span>все активности</span><span class="material">keyboard_arrow_right</span></a></div>
 						</div>
 						<div class="main-activity-sliders tabs">
 							<div class="tabs-body">
-								<div data-tab="science" class="main-activity-slider">
-									<div class="swiper-container">
+								<div data-tab="science" class="main-activity-slider tab-hide">
+									<div data-autoplay="3000" class="swiper-container">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
 												<div class="main-activity-slider-title">Вокальная студия</div>
@@ -657,7 +657,7 @@
 									</div>
 								</div>
 								<div data-tab="sport" class="main-activity-slider tab-hide">
-									<div class="swiper-container">
+									<div data-autoplay="3000" class="swiper-container">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
 												<div class="main-activity-slider-title">Вокasdasdя</div>
@@ -674,7 +674,7 @@
 									</div>
 								</div>
 								<div data-tab="creation" class="main-activity-slider tab-hide">
-									<div class="swiper-container">
+									<div data-autoplay="3000" class="swiper-container">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
 												<div class="main-activity-slider-title">Творчество</div>
@@ -696,7 +696,7 @@
 				</div>
 				<div class="main-poltavchenko">
 					<div class="wrap">
-						<div class="swiper-container">
+						<div data-autoplay="3000" class="swiper-container">
 							<div class="swiper-wrapper">
 								<div style="background-image: url(/assets/img/poltav.png);background-position: right bottom;  " class="swiper-slide">
 									<div class="main-poltavchenko-text">«На протяжении многих десятилетий выпускники ГУАПа – генеральные конструкторы, главные инженеры, руководители крупных промышленных предприятий – определяют облик авиационной, космической и приборостроительной отраслей»</div>

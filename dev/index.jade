@@ -9,7 +9,7 @@ block content
 
 	//- БЛОК С ГЛАВНЫМ СЛАЙДЕРОМ
 	.main-slider
-		.swiper-container
+		.swiper-container(data-autoplay='3000')
 			.main-slider-items.swiper-wrapper
 				.main-slider-item.swiper-slide.main-slider-item-image(style="background-image: url(/assets/img/1.jpg)")
 					.wrap
@@ -48,10 +48,10 @@ block content
 						.info-component-title
 							.tabs
 								.tabs-header
-									a(href="#ADS").active ОБЪЯВЛЕНИЯ
+									a(href="#ADS") ОБЪЯВЛЕНИЯ
 									a(href="#PARTY") МЕРОПРИЯТИЯ
 						.tabs-body
-							.info-component.info-component-ads(data-tab="ADS")
+							.info-component.info-component-ads.tab-hide(data-tab="ADS")
 								.info-component-content
 									a(href="#").info-component-item
 										.table
@@ -536,7 +536,7 @@ block content
 						.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
 						.main-news-item-text #[b Звание «Почётный гражданин Петербурга»] присвоено почётному доктору ГУАП, академику РАН Владимиру Валентиновичу Окрепилову
 			.mobile
-				.swiper-container
+				.swiper-container(data-autoplay='3000')
 					.swiper-wrapper
 						a(href="#", data-date="25 мая").main-news-item.swiper-slide
 							.main-news-item-image(style="background-image: url(https://pp.vk.me/c622029/v622029930/36d04/bb1vC1lzL9E.jpg)")
@@ -558,7 +558,7 @@ block content
 				.big-block-title-main.main-activity-title-main
 					.tabs
 						.tabs-header
-							a(href="#science").active Наука
+							a(href="#science") Наука
 							a(href="#sport") Спорт
 							a(href="#creation") Творчество
 				.big-block-title-link.main-activity-title-link
@@ -568,9 +568,9 @@ block content
 			//- табы
 			.main-activity-sliders.tabs
 				.tabs-body
-					.main-activity-slider(data-tab="science")
+					.main-activity-slider.tab-hide(data-tab="science")
 						//- СЛАЙДЕР
-						.swiper-container
+						.swiper-container(data-autoplay='3000')
 							.swiper-wrapper
 								.swiper-slide
 									.main-activity-slider-title Вокальная студия
@@ -584,7 +584,7 @@ block content
 
 					.main-activity-slider.tab-hide(data-tab="sport")
 						//- СЛАЙДЕР
-						.swiper-container
+						.swiper-container(data-autoplay='3000')
 							.swiper-wrapper
 								.swiper-slide
 									.main-activity-slider-title Вокasdasdя
@@ -598,7 +598,7 @@ block content
 
 					.main-activity-slider.tab-hide(data-tab="creation")
 						//- СЛАЙДЕР
-						.swiper-container
+						.swiper-container(data-autoplay='3000')
 							.swiper-wrapper
 								.swiper-slide
 									.main-activity-slider-title Творчество
@@ -616,7 +616,7 @@ block content
 	.main-poltavchenko
 		.wrap
 			//- СЛАЙДЕР
-			.swiper-container
+			.swiper-container(data-autoplay='3000')
 				.swiper-wrapper
 					.swiper-slide(style="background-image: url(/assets/img/poltav.png);background-position: right bottom;  ")
 						.main-poltavchenko-text.

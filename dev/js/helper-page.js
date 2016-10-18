@@ -16,6 +16,8 @@ var app = {};
 			this.setMapsite();
 			this.setMenuMobile();
 			this.resize();
+
+
 		},
 
 		setMenuMobile: function() {
@@ -55,12 +57,12 @@ var app = {};
 				var $this = $(this),
 					isActive = $this.hasClass('active');
 				if (window.outerWidth > 940) {
-					return false
+					return false;
 				};
 				$('.main-mapsite-list').stop().slideUp();
 				$('.main-mapsite-title, .main-mapsite-list').removeClass('active');
 				if (isActive) {
-					return false
+					return false;
 				}
 				$this.addClass('active').next().stop().slideDown(300, function() {
 					$this.addClass('active');
@@ -160,6 +162,15 @@ var app = {};
 					$containter = $this.closest('.tabs-container');
 				$containter.find('.tabs-header').find('a').removeClass('active').filter($this).addClass('active');
 				$containter.find('.tabs-body [data-tab]').addClass('tab-hide').filter('[data-tab="' + $this[0].hash.substr(1) + '"]').removeClass('tab-hide');
+				var sll = self.SLIDERS_ARR.length;
+				for (var s = 0; s < sll; s++) {
+					if (self.SLIDERS_ARR[s].update) {
+						self.SLIDERS_ARR[s].update();
+					}
+				}
+			});
+			$('.tabs .tabs-header').each(function(){
+				$(this).find('a:first').click()
 			});
 		},
 
@@ -184,7 +195,7 @@ var app = {};
 					autoplay = $this.data('autoplay');
 				isLoop = autoplay ? true : false;
 
-				$this.wrap('<div class="slider-div-sizer" style="width: ' + $this.parent().width() + 'px"/>');
+				$this.css({width: '100%'}).wrap('<div class="slider-div-sizer" style="width: ' + $this.parent().width() + 'px"/>');
 
 				self.SLIDERS_ARR.push(new Swiper($this[0], {
 					pagination: isPag ? $pag[0] : null,
@@ -194,6 +205,15 @@ var app = {};
 					autoplay: autoplay ? autoplay : null,
 					loop: isLoop
 				}));
+
+				setTimeout(function(){
+					var sll = self.SLIDERS_ARR.length;
+					for (var s = 0; s < sll; s++) {
+						if (self.SLIDERS_ARR[s].update) {
+							self.SLIDERS_ARR[s].update();
+						}
+					}
+				}, 1000)
 			});
 		},
 
@@ -204,25 +224,26 @@ var app = {};
 				if (resizeTimer) {
 					clearTimeout(resizeTimer);
 				}
-				resizeTimer = setTimeout(function() {
-					$('.main-mapsite-title').removeClass('active');
-					$('.main-mapsite-list')[window.outerWidth > 940 ? 'show' : 'hide']();
-					$('.slider-div-sizer').each(function() {
-						var $this = $(this);
-						$this.css({
-							width: '0'
-						});
-						$this.css({
-							width: $this.parent().width()
-						})
+				$('.slider-div-sizer').each(function() {
+					var $this = $(this);
+					$this.css({
+						width: '0'
 					});
+					$this.css({
+						width: $this.parent().width()
+					})
+				});
+				resizeTimer = setTimeout(function() {
+					$('.main-mapsite-list')[window.outerWidth > 940 ? 'show' : 'hide']();
+					$('.main-mapsite-title').removeClass('active');
 					var sll = self.SLIDERS_ARR.length;
 					for (var s = 0; s < sll; s++) {
 						if (self.SLIDERS_ARR[s].update) {
 							self.SLIDERS_ARR[s].update();
 						}
 					}
-				}, 0);
+
+				}, 1000);
 
 			})
 
