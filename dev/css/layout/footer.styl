@@ -1,7 +1,6 @@
 ﻿.footer
 	padding-bottom: 20px
 	background: #f5f5f5
-	padding-top: 45px
 	.wrap
 		padding 0
 	&-text
@@ -10,10 +9,24 @@
 		line-height 20px
 		.table
 			table-layout: auto
+			@media (max-width: 940px)
+				display block !important
+				text-align center
+			.table-row
+				@media (max-width: 940px)
+					display block !important
+					text-align center
 			.table-cell
+				@media (max-width: 940px)
+					display block !important
+					text-align center
 				vertical-align top
 				p
 					padding-right: 30px
+					@media (max-width: 940px)
+						padding-right: 0px
+						font-size 16px
+						padding-bottom 20px
 	&-social
 		display: inline-block;
 		white-space: nowrap;
@@ -26,11 +39,27 @@
 		max-width 700px
 		width 100%
 		font-size: 12px
+		@media (max-width: 940px)
+			display none
 		a
 			color #005BAB
 	&-contacts
+		padding-top: 45px
+		@media (max-width: 940px)
+			display block !important
+		.table
+			@media (max-width: 940px)
+				display block !important
+				margin-bottom: 40px !important
+		.table-row
+			@media (max-width: 940px)
+				display block !important
+				font-size 0
 		.table-cell
 			width 25%
+			@media (max-width: 940px)
+				width 50%
+				display inline-block !important
 		.phone
 			margin-bottom 13px
 			display block
@@ -56,6 +85,8 @@
 			display inline-block
 			vertical-align middle
 			white-space: nowrap
+			@media (max-width: 940px)
+				height 50px
 			&:hover
 				text-decoration: underline
 				cursor: pointer
@@ -70,3 +101,98 @@
 				vertical-align middle
 		.table-cell
 			vertical-align top
+
+.main
+	&-mapsite
+		padding-top 60px
+		padding-bottom 30px
+		background: white
+		@media (max-width: 940px)
+			padding-top 0px
+			.table
+				margin-left -20px
+				margin-right -20px
+				width auto !important
+		&-list
+			@media (max-width: 940px)
+				padding-top 10px
+				display none
+				a
+					font-size 18px
+					line-height 22px
+					padding-bottom 16px
+				padding-left 20px !important
+				padding-right 20px !important
+				padding-bottom 20px !important
+			&.active
+				display block
+				@media (max-width: 940px)
+					border-bottom: 1px solid rgba(0,0,0,0.13)
+		.table
+			margin-bottom 0
+			@media (max-width: 940px)
+				width 100%
+				display block !important
+			&-row
+				@media (max-width: 940px)
+					width 100%
+					display block !important
+					font-size 0
+			&-cell
+				width: 33%;
+				@media (max-width: 940px)
+					width 100% !important
+					display block !important
+		&-title
+			font-size 24px
+			line-height 24px
+			font-weight: bold
+			padding-bottom 14px
+			padding-right 15px
+			display block
+			text-decoration none !important
+			color black !important
+			padding-left 0
+			@media (max-width: 940px)
+				padding-left 20px !important
+				padding-right 20px !important
+			&.active
+				@media (max-width: 940px)
+					border-bottom: 1px solid rgba(0,0,0,0)
+				.material
+					@media (max-width: 940px)
+						transform: rotate(-90deg)
+						left: -25px
+			@media (max-width: 1279px)
+				line-height 20px
+				padding-bottom 12px
+			@media (max-width: 940px)
+				font-size: 24px
+				height: 65px
+				line-height 65px
+				vertical-align middle
+				border-bottom: 1px solid rgba(0,0,0,0.13)
+				padding-bottom: 0px;
+				span
+					vertical-align middle
+				.material
+					width 20px
+					height 20px
+					float right
+					display block !important
+					transform: rotate(90deg)
+					position relative
+					top: 24px;
+					left: 18px;
+		ul
+			padding-left 0
+			list-style-type: none
+			li
+				list-style-type: none
+				padding-bottom 10px
+				padding-left: 0
+				line-height 15px
+				font-size 14px
+				padding-right 10px
+				a
+					color #005BAB

@@ -5,7 +5,12 @@
 		.wrap
 			.table
 				.table-row
-					.table-cell.header-upper-left
+					.table-cell.header-upper-left.mobile.header-logo
+						a(href="/").mobile-menu
+							.icon.icon-ic_menu
+						a(href="/").mobile-logo
+							img(src="/assets/img/sprite/ic_logo.png", alt="")
+					.table-cell.header-upper-left.desktop
 						ul
 							li
 								a(href="#")
@@ -44,7 +49,9 @@
 									i.icon.icon-ic_user_cabinet
 									i.icon.icon-ic_user_cabinet_hover
 
-	.header-downer
+	.header-downer.mobile
+
+	.header-downer.desktop
 		.wrap
 			.header-downer-up
 				.table
