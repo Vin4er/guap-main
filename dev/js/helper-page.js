@@ -24,11 +24,12 @@ var app = {};
 					e.preventDefault();
 					var $hdr = $('.header-downer.mobile'),
 						isO = $hdr.hasClass('active');
-					$hdr.removeClass('active');
+					$hdr.add($(this)).removeClass('active');
 					$hdr.empty()
-					if(!isO){
-						$hdr.append($('header .header-upper-left ul li, header .desktop .header-nav ul li').clone());
+					if (!isO) {
+						$hdr.append($('header .header-upper-left ul').clone()).append($('header .desktop .header-nav ul').clone().addClass('nav'));
 						$hdr.addClass('active');
+						$(this).addClass('active');
 					}
 
 				}).on('click', '.header-downer.mobile li a', function(e) {
@@ -36,16 +37,41 @@ var app = {};
 						$next = $this.next(),
 						isNext = $next.length,
 						isActive = $next.hasClass && $next.hasClass('active');
-					$('.header-downer.mobile li .header-nav-items').removeClass('active').stop().slideUp();
-					if (isNext) {
-						if (isActive) {
-							return false;
-						}
+
+					if ($this.is('[data-navigate-popup]')) {
 						e.preventDefault();
-						$next.stop().slideDown();
-						$next.addClass('active');
+						var div = $('<div>', {
+							class: "data-navigate-popup-mobile"
+						});
+						div.append($('.desktop div[data-navigate-popup="' + $this.data('navigate-popup') + '"]').clone().css({
+							height: '100%',
+							overflow: 'auto',
+							paddingTop: '20px',
+							position: 'static',
+							display: 'block'
+						}));
+						$('body').css('overflow', 'hidden');
+						$('#page').append(div.prepend("<a class='popup-mobile-menu-closer'  href='#'><span class='material-icons'>&#xE314;</span>" + $this.text() + "</a>"));
+					} else {
+						$('.header-downer.mobile .nav li a').removeClass('active')
+						$('.header-downer.mobile li .header-nav-items').removeClass('active').stop().slideUp();
+						if (isNext) {
+							if (isActive) {
+								return false;
+							}
+							e.preventDefault();
+							$next.stop().slideDown();
+							$next.add($this).addClass('active');
+							$next.find('.swiper-slide, .swiper-wrapper').removeClass('swiper-slide swiper-wrapper');
+						}
+
 					}
 
+				})
+				.on('click', '.popup-mobile-menu-closer', function(e) {
+					e.preventDefault();
+					$('.data-navigate-popup-mobile').remove();
+					$('body').css('overflow', '');
 				});
 		},
 
@@ -54,7 +80,7 @@ var app = {};
 				e.preventDefault();
 				var $this = $(this),
 					isActive = $this.hasClass('active');
-				if ((window.outerWidth > 940 && window.innerWidth > 940 )) {
+				if ((window.outerWidth > 940 && window.innerWidth > 940)) {
 					return false;
 				};
 				$('.main-mapsite-list').stop().slideUp();
@@ -167,7 +193,7 @@ var app = {};
 					}
 				}
 			});
-			$('.tabs .tabs-header').each(function(){
+			$('.tabs .tabs-header').each(function() {
 				$(this).find('a:first').click()
 			});
 		},
@@ -193,7 +219,9 @@ var app = {};
 					autoplay = $this.data('autoplay');
 				isLoop = autoplay ? true : false;
 
-				$this.css({width: '100%'}).wrap('<div class="slider-div-sizer" style="width: ' + $this.parent().width() + 'px"/>');
+				$this.css({
+					width: '100%'
+				}).wrap('<div class="slider-div-sizer" style="width: ' + $this.parent().width() + 'px"/>');
 
 				self.SLIDERS_ARR.push(new Swiper($this[0], {
 					pagination: isPag ? $pag[0] : null,
@@ -204,7 +232,7 @@ var app = {};
 					loop: isLoop
 				}));
 
-				setTimeout(function(){
+				setTimeout(function() {
 					var sll = self.SLIDERS_ARR.length;
 					for (var s = 0; s < sll; s++) {
 						if (self.SLIDERS_ARR[s].update) {
@@ -232,7 +260,7 @@ var app = {};
 					})
 				});
 				resizeTimer = setTimeout(function() {
-					$('.main-mapsite-list')[(window.outerWidth > 940 && window.innerWidth > 940 )? 'show' : 'hide']();
+					$('.main-mapsite-list')[(window.outerWidth > 940 && window.innerWidth > 940) ? 'show' : 'hide']();
 					$('.main-mapsite-title').removeClass('active');
 					var sll = self.SLIDERS_ARR.length;
 					for (var s = 0; s < sll; s++) {
