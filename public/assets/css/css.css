@@ -1537,6 +1537,9 @@ button.swiper-pagination-bullet {
     background: #005bab;
     text-align: center;
   }
+  .header-upper .mobile-menu.active .icon {
+    background: url("/assets/img/sprite/ic_close.png");
+  }
   .header-upper .mobile-menu * {
     display: inline-block !important;
     vertical-align: middle;
