@@ -15,6 +15,8 @@ var app = {};
 
 			this.setMapsite();
 			this.setMenuMobile();
+
+
 			this.resize();
 		},
 
@@ -26,10 +28,13 @@ var app = {};
 						isO = $hdr.hasClass('active');
 					$hdr.add($(this)).removeClass('active');
 					$hdr.empty()
+					$('.popup-mobile-menu-closer').click();
+					$('body').css('overflow', '');
 					if (!isO) {
-						$hdr.append($('header .header-upper-left ul').clone()).append($('header .desktop .header-nav ul').clone().addClass('nav'));
+						$hdr.append($('header .language-select').clone().addClass('nav')).append($('header .header-upper-left ul').clone()).append($('header .desktop .header-nav ul').clone().addClass('nav'));
 						$hdr.addClass('active');
 						$(this).addClass('active');
+						$('body').css('overflow', 'hidden');
 					}
 
 				}).on('click', '.header-downer.mobile li a', function(e) {
@@ -43,6 +48,8 @@ var app = {};
 						var div = $('<div>', {
 							class: "data-navigate-popup-mobile"
 						});
+						$('body').css('overflow', '');
+						$('body').scrollTop(0);
 						div.append($('.desktop div[data-navigate-popup="' + $this.data('navigate-popup') + '"]').clone().css({
 							height: '100%',
 							overflow: 'auto',
@@ -50,8 +57,10 @@ var app = {};
 							position: 'static',
 							display: 'block'
 						}));
-						$('body').css('overflow', 'hidden');
 						$('#page').append(div.prepend("<a class='popup-mobile-menu-closer'  href='#'><span class='material-icons'>&#xE314;</span>" + $this.text() + "</a>"));
+
+						$('body').css('overflow', 'hidden');
+
 					} else {
 						$('.header-downer.mobile .nav li a').removeClass('active')
 						$('.header-downer.mobile li .header-nav-items').removeClass('active').stop().slideUp();
@@ -71,7 +80,6 @@ var app = {};
 				.on('click', '.popup-mobile-menu-closer', function(e) {
 					e.preventDefault();
 					$('.data-navigate-popup-mobile').remove();
-					$('body').css('overflow', '');
 				});
 		},
 
@@ -229,7 +237,8 @@ var app = {};
 					prevButton: isArrow ? $arrows[0] : null,
 					nextButton: isArrow ? $arrows[1] : null,
 					autoplay: autoplay ? autoplay : null,
-					loop: isLoop
+					loop: isLoop,
+					spaceBetween: 10
 				}));
 
 				setTimeout(function() {
@@ -239,7 +248,7 @@ var app = {};
 							self.SLIDERS_ARR[s].update();
 						}
 					}
-				}, 1000)
+				}, 1000);
 			});
 		},
 
