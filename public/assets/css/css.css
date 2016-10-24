@@ -30,6 +30,33 @@ a[href*='mailto:'] {
   overflow: hidden;
   max-width: 1920px;
 }
+.custom-scroll_inner {
+  margin-right: -26px !important;
+}
+.custom-scroll_bar-y {
+  margin-top: -5px !important;
+  z-index: 99 !important;
+}
+scrollbar {
+/*  clear useragent default style*/
+  -moz-appearance: none !important;
+}
+/* buttons at two ends */
+scrollbarbutton {
+  -moz-appearance: none !important;
+}
+/* the sliding part*/
+thumb {
+  -moz-appearance: none !important;
+}
+scrollcorner {
+  -moz-appearance: none !important;
+  resize: both;
+}
+/* vertical or horizontal */
+scrollbar[orient="vertical"] {
+  color: #c0c0c0;
+}
 .swiper-container {
   margin: 0 auto;
   position: relative;
@@ -754,10 +781,10 @@ button.swiper-pagination-bullet {
   }
 }
 .main-news-item:hover .main-news-item-image {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .main-news-item:hover .main-news-item-text {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 .main-news-item:after {
   content: attr(data-date);
@@ -1918,6 +1945,7 @@ button.swiper-pagination-bullet {
   overflow: auto;
   bottom: 0;
   top: 64px;
+  min-width: 480px;
 }
 .header .language {
   position: relative;
@@ -2313,7 +2341,7 @@ html body .center {
 }
 .wrap {
   max-width: 1320px;
-  min-width: 300px;
+  min-width: 480px;
   display: block;
   position: relative;
   margin: auto;

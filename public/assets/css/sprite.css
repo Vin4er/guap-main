@@ -24,25 +24,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-ic_adress {
   background-image: url(../img/sprite.png);
-  background-position: -240px -273px;
-  width: 48px;
-  height: 48px;
+  background-position: -358px -124px;
+  width: 34px;
+  height: 49px;
 }
 .icon-ic_announce {
   background-image: url(../img/sprite.png);
-  background-position: -358px -128px;
+  background-position: -358px -40px;
   width: 42px;
   height: 42px;
 }
 .icon-ic_announce_hover {
   background-image: url(../img/sprite.png);
-  background-position: -358px -170px;
+  background-position: -358px -82px;
   width: 42px;
   height: 42px;
 }
 .icon-ic_chinese_language {
   background-image: url(../img/sprite.png);
-  background-position: -358px -88px;
+  background-position: -358px 0px;
   width: 48px;
   height: 40px;
 }
@@ -54,7 +54,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-ic_en_language {
   background-image: url(../img/sprite.png);
-  background-position: -358px -48px;
+  background-position: -288px -273px;
   width: 48px;
   height: 40px;
 }
@@ -96,25 +96,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-ic_menu_arrow_L {
   background-image: url(../img/sprite.png);
-  background-position: -358px -244px;
+  background-position: -358px -254px;
   width: 32px;
   height: 32px;
 }
 .icon-ic_menu_arrow_R {
   background-image: url(../img/sprite.png);
-  background-position: -358px -212px;
+  background-position: -358px -222px;
   width: 32px;
   height: 32px;
 }
 .icon-ic_phone {
   background-image: url(../img/sprite.png);
-  background-position: -310px -144px;
-  width: 48px;
-  height: 48px;
+  background-position: -358px -173px;
+  width: 30px;
+  height: 49px;
 }
 .icon-ic_ru_lang {
   background-image: url(../img/sprite.png);
-  background-position: -358px 0px;
+  background-position: -310px -192px;
   width: 48px;
   height: 48px;
 }
@@ -150,19 +150,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-ic_slider_arrow_L {
   background-image: url(../img/sprite.png);
-  background-position: -240px -128px;
+  background-position: 0px -208px;
   width: 64px;
   height: 65px;
 }
 .icon-ic_slider_arrow_R {
   background-image: url(../img/sprite.png);
-  background-position: 0px -208px;
+  background-position: -240px -128px;
   width: 64px;
   height: 65px;
 }
 .icon-ic_user_cabinet {
   background-image: url(../img/sprite.png);
-  background-position: -310px -192px;
+  background-position: -310px -144px;
   width: 48px;
   height: 48px;
 }
@@ -180,7 +180,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-ic_vk_hover {
   background-image: url(../img/sprite.png);
-  background-position: -288px -273px;
+  background-position: -240px -273px;
   width: 48px;
   height: 48px;
 }

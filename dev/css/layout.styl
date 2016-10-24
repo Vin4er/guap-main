@@ -26,8 +26,31 @@ a[href*='tel:'], a[href*='mailto:']
 #page
 	overflow: hidden;
 	max-width 1920px
-
-
+.custom-scroll_inner
+	margin-right: -26px!important
+.custom-scroll_bar-y
+	margin-top: -5px !important;
+	z-index 99 !important;
+scrollbar {
+/*  clear useragent default style*/
+   -moz-appearance: none !important;
+}
+/* buttons at two ends */
+scrollbarbutton {
+   -moz-appearance: none !important;
+}
+/* the sliding part*/
+thumb{
+   -moz-appearance: none !important;
+}
+scrollcorner {
+   -moz-appearance: none !important;
+   resize:both;
+}
+/* vertical or horizontal */
+scrollbar[orient="vertical"] {
+    color:silver;
+}
 
 @import  "./lib/swiper/swiper.styl"
 @import  "./lib/fancybox/jquery.fancybox.styl"

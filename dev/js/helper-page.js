@@ -140,7 +140,7 @@ var app = {};
 
 					downPane
 						.append($ps)
-						.append('<div class="swiper-button-next material swiper-button">keyboard_arrow_right</div><div class="swiper-button-prev material swiper-button">keyboard_arrow_left</div>');
+						.append('<div class="swiper-button-next material-icons swiper-button">keyboard_arrow_right</div><div class="swiper-button-prev material-icons swiper-button">keyboard_arrow_left</div>');
 
 					self.SLIDERS_ARR.push(new Swiper($ps[0], {
 						slidesPerView: 'auto',
